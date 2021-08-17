@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+
+        <title>JS PRACTICE</title>
+
+    </head>
+
+    <body>
+
+       <p id="text">Hello World!</p>
+
+       <button id="myButton">Change Text..</button>
+
+       <p id="secondParagraph">JavaScript is ...</p>
+
+       <button id="secondButton">Append Text</button>
+
+       <p id="emptyParagraph"></p>
+
+       <button id="createParagraph">Create Text!</button>
+
+       <p id="moreText">This is some more text</p>
+
+       <button id="styleText">Style Text</button>
+
+        <script type="text/javascript">
+
+            
+            
+document.getElementById("myButton").onclick = function() {
+                
+                document.getElementById("text").innerHTML = "Hello Rob!";
+                
+            }
+            
+            document.getElementById("secondButton").onclick = function() {
+                
+                document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + "awesome!";
+                
+            }
+            
+            document.getElementById("createParagraph").onclick = function() {
+                
+                
+                document.getElementById("emptyParagraph").innerHTML = "<h1>Hi there!</h1>";
+                
+            }
+            
+            document.getElementById("styleText").onclick = function() {
+                
+                document.getElementById("moreText").style.color = "red";
+                
+            }
+            
+        
+
+        </script>
+
+    </body>
+
+</html>
